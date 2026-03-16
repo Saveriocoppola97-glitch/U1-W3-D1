@@ -46,10 +46,11 @@ const number = [1, 2, 3, 4, 5];
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 const arraySomma = (arreys) => {
-  return arreys.reduce((sum, num) => sum + num, 0);
+  return arreys.reduce((num1, num2) => num1 + num2, 0);
 };
 
 const numberss = [1, 2, 3, 4, 5];
+console.log(numberss);
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
@@ -62,7 +63,18 @@ const numberss = [1, 2, 3, 4, 5];
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+const getOddNumbers = () => {
+  const arreysss = [];
 
+  for (let i = 1; i <= 99; i++) {
+    if (i % 2 !== 0) {
+      arreysss.push(i);
+    }
+  }
+  return arreysss;
+};
+
+console.log(getOddNumbers());
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
